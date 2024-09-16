@@ -1,6 +1,20 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import {ReactNode} from 'react';
+import localFont from "next/font/local";
+import {Alegreya} from "next/font/google"
+
+const monCheri = localFont({
+  src: "./fonts/MonCheri.otf",
+  variable: "--font-moncheri",
+  weight: "400",
+});
+
+const alegreya = Alegreya({
+  subsets: ['latin'],
+  variable: '--font-alegreya',
+  weight: ["400", "500", "600"]
+});
 
 
 export const metadata: Metadata = {
@@ -11,7 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: ReactNode }) {
   return (
     <html lang="en">
-    <body className={`antialiased`}>
+    <body className={`${monCheri.variable} ${alegreya.variable} antialiased`}>
     {children}
     </body>
     </html>

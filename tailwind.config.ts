@@ -22,6 +22,10 @@ const config: Config = {
         autumn3: '#d68125',
         autumn4: '#d0998a',
       },
+      fontFamily: {
+        moncheri: ["var(--font-moncheri)"],
+        alegreya: ["var(--font-alegreya)"],
+      },
     },
   },
   plugins: [require("tailwindcss-safe-area")],

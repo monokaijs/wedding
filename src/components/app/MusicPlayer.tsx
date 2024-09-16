@@ -26,7 +26,7 @@ export default function MusicPlayer() {
     play();
   }, []);
 
-  return <div className={'flex flex-col px-8'}>
+  return <div className={'flex flex-col px-8 justify-center'}>
     <div>
       <LeafFrame
         className={'w-[80vw] md:w-[500px] lg:w-[400px] mx-auto'}

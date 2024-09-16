@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,11 +15,11 @@
 }
 
 html, body {
+  @apply font-alegreya;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Alegreya', sans-serif;
   font-size: 18px;
 }
 
